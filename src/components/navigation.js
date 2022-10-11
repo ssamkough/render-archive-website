@@ -1,13 +1,17 @@
-import React from 'react'
 import { Link } from 'gatsby'
+import React from 'react'
 
 import * as styles from './navigation.module.css'
 
 const Navigation = () => (
-  <nav role="navigation" className={styles.container} aria-label="Main">
+  <nav role="navigation" className={styles.container}>
     <Link to="/" className={styles.logoLink}>
-      <span className={styles.logo} />
-      <span className={styles.navigationItem}>Gatsby Starter Contentful</span>
+      <img
+        src="/logo.png"
+        alt="render archive logo which is a castle (in the style of super mario) with a green flag atop it"
+        style={{ width: '50px' }}
+      />
+      <span className={styles.navigationItem}>The Render Archive</span>
     </Link>
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
@@ -15,13 +19,8 @@ const Navigation = () => (
           Home
         </Link>
       </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
-          Blog
-        </Link>
-      </li>
     </ul>
   </nav>
 )
 
-export default Navigation
+export default React.memo(Navigation)
