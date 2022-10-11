@@ -7,3 +7,15 @@
   overflow: auto;
   padding: 20px 120px;
 }
+
+@media (max-width: 768px) {
+  .layoutContainer {
+    padding: 20px 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .layoutContainer {
+    padding: 20px 20px;
+  }
+}

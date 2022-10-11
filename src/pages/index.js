@@ -71,7 +71,10 @@ class Home extends React.Component {
                     }}
                   >
                     <h4 style={{ margin: 0, padding: 0 }}>{collectionTitle}</h4>
-                    <img src={collectionLogo.url} style={{ width: '150px' }} />
+                    <img
+                      src={collectionLogo.url}
+                      style={{ maxWidth: '150px', height: 'auto' }}
+                    />
                   </div>
                 )
               )}
