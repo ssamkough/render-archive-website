@@ -1,10 +1,9 @@
 import { Link } from 'gatsby'
 import React from 'react'
-
-import * as styles from './navigation.module.css'
+import * as styles from './index.module.css'
 
 const Navigation = () => (
-  <nav role="navigation" className={styles.container}>
+  <nav role="navigation" className={styles.navContainer}>
     <Link to="/" className={styles.logoLink}>
       <img
         src="/logo.png"

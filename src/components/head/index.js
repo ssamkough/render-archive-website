@@ -1,8 +1,8 @@
-import * as React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react'
 import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 
-const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
+const Head = ({ description = '', lang = 'en', meta = [], title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -73,4 +73,4 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
   )
 }
 
-export default Seo
+export default React.memo(Head)
