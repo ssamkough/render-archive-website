@@ -1,0 +1,96 @@
+.homeContainer {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.cardContainer {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px;
+  border: 2px dotted black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.cardContainer:hover {
+  border-style: solid;
+}
+
+.cardMainInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cardMainInfoText {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardMainInfoDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.cardMainInfoImageContainer {
+  flex: 1;
+  width: 100%;
+  min-width: 100px;
+}
+
+.cardMainInfoImage {
+  max-width: 100px;
+  height: 100px;
+}
+
+.cardCollectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardCollectionDivider {
+  width: 100%;
+}
+
+.cardCollectionHeaderText {
+  font-size: 18px;
+}
+
+.cardCollectionCardsContainer {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.cardCollectionIndividualCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.cardCollectionIndividualCardContainer:hover {
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cardCollectionIndividualCardText {
+  max-width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.noHeadingSpacing {
+  margin: 0px;
+  padding: 0px;
+}

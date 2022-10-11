@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/globals.css'
-import '../../styles/variables.css'
+import '../../../styles/globals.css'
+import '../../../styles/variables.css'
 import Footer from '../footer'
 import Head from '../head'
 import Navigation from '../navigation'
