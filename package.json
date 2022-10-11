@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-plain-text-renderer": "^15.12.1",
+    "dotenv": "^16.0.3",
     "gatsby": "^4.23.1",
     "gatsby-plugin-image": "^2.23.1",
     "gatsby-plugin-react-helmet": "^5.0.0",
