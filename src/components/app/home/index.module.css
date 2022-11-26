@@ -1,4 +1,38 @@
 .homeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroHomeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.heroTitleAndDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+h1,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cta {
+  color: #ff0000;
+}
+
+.cta:hover {
+  color: #ff0000;
+  opacity: 0.75;
+}
+
+.homeCardsContainer {
   width: 100%;
   display: flex;
   gap: 30px;

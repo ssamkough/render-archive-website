@@ -1,5 +1,6 @@
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import React from 'react'
+import * as styles from './index.module.css'
 
 const Collection = ({
   collection: {
@@ -10,9 +11,9 @@ const Collection = ({
     scans,
   },
 }) => (
-  <article>
+  <article className={styles.collectionContainer}>
     <h1>{title}</h1>
-    <h3>{renderRichText(description)}</h3>
+    <p>{renderRichText(description)}</p>
   </article>
 )
 

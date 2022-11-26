@@ -1,9 +1,10 @@
 import { Link } from 'gatsby'
+import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import React from 'react'
 import * as styles from './index.module.css'
 
-const Home = ({ developers }) => (
-  <div className={styles.homeContainer}>
+const Cards = ({ developers }) => (
+  <section className={styles.homeCardsContainer}>
     {developers.map(({ id, title, description, logo, collections }) => (
       <Link to={`developers/${id}`}>
         <article key={id} className={styles.cardContainer} tabIndex="0">
@@ -11,7 +12,7 @@ const Home = ({ developers }) => (
             <div className={styles.cardMainInfoText}>
               <h2 className={styles.noHeadingSpacing}>{title}</h2>
               <span className={styles.cardMainInfoDescription}>
-                {JSON.parse(description.raw).content[0].content[0].value}
+                {renderRichText(description)}
               </span>
             </div>
             <div className={styles.cardMainInfoImageContainer}>
@@ -55,7 +56,7 @@ const Home = ({ developers }) => (
         </article>
       </Link>
     ))}
-  </div>
+  </section>
 )
 
-export default React.memo(Home)
+export default React.memo(Cards)

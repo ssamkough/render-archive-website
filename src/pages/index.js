@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'
+import Home from '../components/app/home'
 import Layout from '../components/core/layout'
-import Home from '../components/pages/home'
 
 class HomePage extends React.Component {
   render() {

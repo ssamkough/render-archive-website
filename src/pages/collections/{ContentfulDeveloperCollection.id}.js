@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import Collection from '../../components/app/collections/Collection'
 import Layout from '../../components/core/layout'
-import Collection from '../../components/pages/collections'
 
 const CollectionPage = ({ data: { contentfulDeveloperCollection } }) => (
   <Layout>
@@ -25,12 +25,14 @@ export const query = graphql`
       }
       scans {
         id
-        url
         title
-        description
-        filename
-        width
-        height
+        mainImage {
+          url
+          description
+          filename
+          width
+          height
+        }
       }
     }
   }

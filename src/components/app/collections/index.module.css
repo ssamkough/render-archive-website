@@ -1,0 +1,71 @@
+.pageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pageHeader {
+  display: flex;
+  gap: 20px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings > h1,
+.headings > h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.headingLogo {
+  max-width: 300px;
+  height: 300px;
+}
+
+.collectionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.collectionsGridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  column-gap: 20px;
+}
+
+.collection {
+  display: flex;
+  padding: 10px;
+  border: 2px dotted black;
+  border-radius: 2px;
+}
+
+.collection:hover {
+  border-style: solid;
+}
+
+.collectionHeadings {
+  flex: 1;
+}
+
+.collection h3,
+.collection p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.collection > img {
+  width: 150px;
+  height: 100px;
+}
+
+.collectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

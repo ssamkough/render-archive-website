@@ -10,14 +10,16 @@ const Navigation = () => (
         alt="render archive logo which is a castle (in the style of super mario) with a green flag atop it"
         style={{ width: '50px' }}
       />
-      <span className={styles.navigationItem}>The Render Archive</span>
     </Link>
     <ul className={styles.navigation}>
+      <li className={styles.navigationItem}>
+        <Link to="/collections">Collections</Link>
+      </li>
       <li className={styles.navigationItem}>
         <Link to="/about">About</Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contribute">Contribute</Link>
       </li>
     </ul>
   </nav>
