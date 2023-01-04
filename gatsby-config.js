@@ -5,7 +5,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'The Render Archive',
-    description: 'The Render Archive Website',
+    description:
+      'A group of people dedicated to making collections for render artwork.',
   },
   plugins: [
     'gatsby-transformer-sharp',

@@ -2,7 +2,18 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const Head = ({ description = '', lang = 'en', meta = [], title, image }) => {
+const TITLE = 'The Render Archive'
+const DESCRIPTION =
+  'A group of people dedicated to making collections for render artwork.'
+const LOGO = 'https://therenderarchive.com/logo.png'
+
+const Head = ({
+  title = TITLE,
+  description = DESCRIPTION,
+  lang = 'en',
+  meta = [],
+  image: incomingImage,
+}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -16,8 +27,9 @@ const Head = ({ description = '', lang = 'en', meta = [], title, image }) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const defaultTitle = site.siteMetadata?.title || title
+  const metaDescription = site.siteMetadata?.description || description
+  const image = incomingImage || LOGO
 
   return (
     <Helmet
