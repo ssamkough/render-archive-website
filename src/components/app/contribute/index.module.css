@@ -3,5 +3,10 @@
 }
 
 .twitterLink {
-  color: blue;
+  color: var(--green);
+}
+
+.twitterLink:hover,
+.twitterLink:focus {
+  color: var(--cream);
 }

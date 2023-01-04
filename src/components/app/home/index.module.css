@@ -24,11 +24,12 @@ p {
 }
 
 .cta {
-  color: #ff0000;
+  color: var(--green);
+  font-weight: 600;
 }
 
 .cta:hover {
-  color: #ff0000;
+  color: var(--cream);
   opacity: 0.75;
 }
 
@@ -45,7 +46,7 @@ p {
   justify-content: space-between;
   gap: 12px;
   padding: 8px;
-  border: 2px dotted black;
+  border: 2px dotted var(--black);
   border-radius: 2px;
   cursor: pointer;
 }

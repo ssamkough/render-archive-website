@@ -12,10 +12,11 @@
 }
 
 .aboutContainer a {
-  color: #0000ff;
+  color: var(--green);
 }
 
 .aboutContainer a:hover,
 .aboutContainer a:focus {
+  color: var(--cream);
   opacity: 0.8;
 }

@@ -42,7 +42,7 @@
   display: flex;
   width: 450px;
   padding: 10px;
-  border: 2px dotted black;
+  border: 2px dotted var(--black);
   border-radius: 2px;
 }
 
@@ -64,6 +64,7 @@
 }
 
 .collection:hover {
+  color: var(--green);
   border-style: solid;
 }
 
@@ -97,7 +98,8 @@
 
 .collectionContainer > hr {
   width: 100%;
-  background-color: black;
+  background-color: var(--black);
+  border: 1px solid;
 }
 
 .collectionScansContainer {
@@ -116,7 +118,7 @@
 }
 
 .collectionScansContainer > a {
-  border: 2px solid black;
+  border: 2px solid var(--black);
   cursor: pointer;
 }
 
@@ -135,14 +137,14 @@
 
 .tabContainer button {
   font-size: 1.2em;
-  color: black;
-  border: 1px solid black;
+  color: var(--black);
+  border: 1px solid var(--black);
   border-radius: 4px;
   cursor: pointer;
 }
 
 .tabContainer button.activeTabButton {
-  color: white;
-  background-color: black;
-  border-color: white;
+  color: var(--white);
+  background-color: var(--black);
+  border-color: var(--white);
 }

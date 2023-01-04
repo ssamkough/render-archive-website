@@ -35,7 +35,7 @@
 .collection {
   display: flex;
   padding: 10px;
-  border: 2px dotted black;
+  border: 2px dotted var(--black);
   border-radius: 2px;
 }
 

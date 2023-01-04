@@ -9,9 +9,12 @@
   --font-serif: 'Times New Roman', Times, serif;
 
   /* palette */
-  --white: #fff;
-  --black: #000;
+  --white: #b1a999;
+  --black: #8c2a2a;
   --black-fade-5: rgba(0, 0, 0, 0.05);
+
+  --cream: #e4d5b7;
+  --green: #496c55;
 
   /* radii */
   --radius-sm: 4px;
