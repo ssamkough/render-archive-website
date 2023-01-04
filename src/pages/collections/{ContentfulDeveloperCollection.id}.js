@@ -34,6 +34,15 @@ export const query = graphql`
           height
         }
       }
+      renders {
+        id
+        title
+        image {
+          id
+          url
+          description
+        }
+      }
     }
   }
 `

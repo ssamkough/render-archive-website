@@ -110,3 +110,21 @@
 .collectionScansContainer > a > img {
   object-fit: contain;
 }
+
+.tabContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.tabContainer button {
+  font-size: 1.2em;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.activeTabButton {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
