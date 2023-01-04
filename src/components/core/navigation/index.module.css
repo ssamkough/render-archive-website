@@ -44,6 +44,8 @@
   left: -9999px;
   z-index: 999;
   color: red;
+  background-color: darkgray;
+  padding: 1em;
   opacity: 0;
   font-weight: 600;
 }

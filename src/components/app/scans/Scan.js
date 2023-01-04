@@ -9,10 +9,14 @@ const Scan = ({
     uncroppedImage,
     alternativeScans,
   },
-  collectionId,
+  location,
 }) => (
   <article className={styles.scanContainer}>
-    <Link to={`/collections/${collectionId}`}>&larr; Back to collection</Link>
+    {location?.state?.collectionId && (
+      <Link to={`/collections/${location.state.collectionId}`}>
+        &larr; Back to collection
+      </Link>
+    )}
     <h1>{title}</h1>
     <div className={styles.mainScanContainer}>
       <div>

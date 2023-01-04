@@ -3,14 +3,9 @@ import React from 'react'
 import Scan from '../../components/app/scans/Scan'
 import Layout from '../../components/core/layout'
 
-const ScanPage = ({
-  data: { contentfulScan },
-  location: {
-    state: { collectionId },
-  },
-}) => (
+const ScanPage = ({ data: { contentfulScan }, location }) => (
   <Layout>
-    <Scan scan={contentfulScan} collectionId={collectionId} />
+    <Scan scan={contentfulScan} location={location} />
   </Layout>
 )
 

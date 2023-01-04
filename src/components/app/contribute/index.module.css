@@ -1,3 +1,7 @@
+.contributeContainer > :is(h1 + p) {
+  margin-top: 12px;
+}
+
 .twitterLink {
   color: blue;
 }
