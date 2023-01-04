@@ -40,10 +40,27 @@
 
 .collection {
   display: flex;
-  max-width: 500px;
+  width: 450px;
   padding: 10px;
   border: 2px dotted black;
   border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .collectionsGridContainer {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  .collection {
+    width: 320px;
+  }
+
+  .collectionHeadings > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 .collection:hover {

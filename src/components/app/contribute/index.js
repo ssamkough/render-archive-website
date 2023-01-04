@@ -4,9 +4,8 @@ import * as styles from './index.module.css'
 const Contribute = () => (
   <div className={styles.contributeContainer}>
     <h1>Contribute</h1>
-    <p>Thanks for wanting to contribute. We really appreciate it :D</p>
     <p>
-      The best way to contact us is{' '}
+      Message us through{' '}
       <a
         href="https://mobile.twitter.com/render_archive"
         target="_blank"
@@ -16,6 +15,7 @@ const Contribute = () => (
         @renderarchive's Twitter dms.
       </a>
     </p>
+    <p>Thanks for wanting to contribute. We really appreciate it :D</p>
   </div>
 )
 

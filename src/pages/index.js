@@ -6,11 +6,11 @@ import Layout from '../components/core/layout'
 
 class HomePage extends React.Component {
   render() {
-    const developers = get(this, 'props.data.allContentfulDeveloper.nodes')
+    const collections = get(this, 'props.data.collection.nodes')
 
     return (
       <Layout>
-        <Home developers={developers} />
+        <Home collections={collections} />
       </Layout>
     )
   }
@@ -20,7 +20,7 @@ export default HomePage
 
 export const pageQuery = graphql`
   query HomeQuery {
-    allContentfulDeveloper {
+    collection: allContentfulDeveloperCollection {
       nodes {
         id
         title
@@ -28,19 +28,8 @@ export const pageQuery = graphql`
           raw
         }
         logo {
-          description
           url
-        }
-        collections {
-          id
-          title
-          description {
-            raw
-          }
-          logo {
-            url
-            description
-          }
+          description
         }
       }
     }

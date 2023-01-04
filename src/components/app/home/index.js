@@ -1,12 +1,12 @@
 import React from 'react'
-import Cards from './Cards'
+import CollectionsList from '../collections/CollectionsList'
 import Hero from './Hero'
 import * as styles from './index.module.css'
 
-const Home = ({ developers }) => (
+const Home = ({ collections }) => (
   <div className={styles.homeContainer}>
     <Hero />
-    <Cards developers={developers} />
+    <CollectionsList collections={collections} />
   </div>
 )
 
