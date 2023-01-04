@@ -1,11 +1,18 @@
-.layoutContainer {
+.outerContainer {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.innerContainer {
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  padding: 20px 120px;
 }
 
 @media (max-width: 768px) {

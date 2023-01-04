@@ -8,13 +8,15 @@ import * as styles from './index.module.css'
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.layoutContainer}>
-      <Head />
-      <Navigation />
-      <main id="main" style={{ padding: '40px 0px' }}>
-        {children}
-      </main>
-      <Footer />
+    <div className={styles.outerContainer}>
+      <div className={styles.innerContainer}>
+        <Head />
+        <Navigation />
+        <main id="main" style={{ padding: '40px 0px' }}>
+          {children}
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }
