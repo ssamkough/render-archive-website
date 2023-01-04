@@ -40,6 +40,7 @@
 
 .collection {
   display: flex;
+  max-width: 500px;
   padding: 10px;
   border: 2px dotted black;
   border-radius: 2px;
@@ -67,5 +68,45 @@
 .collectionContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 6px;
+  text-align: center;
+}
+
+.collectionContainer > :is(p, hr) {
+  max-width: 700px;
+}
+
+.collectionContainer > hr {
+  width: 100%;
+  background-color: black;
+}
+
+.collectionScansContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.collectionScansContainer > :is(a, img) {
+  width: 200px;
+  height: 200px;
+}
+
+.collectionScansContainer > a {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.collectionScansContainer > a:hover {
+  border-style: dotted;
+}
+
+.collectionScansContainer > a > img {
+  object-fit: contain;
 }

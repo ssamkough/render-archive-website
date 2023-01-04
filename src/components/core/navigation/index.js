@@ -12,6 +12,11 @@ const Navigation = () => (
       />
     </Link>
     <ul className={styles.navigation}>
+      <li>
+        <a href="#main" className={styles.skipLink}>
+          Skip to Main Content
+        </a>
+      </li>
       <li className={styles.navigationItem}>
         <Link to="/collections">Collections</Link>
       </li>

@@ -7,7 +7,6 @@ import Layout from '../../components/core/layout'
 class CollectionsPage extends React.Component {
   render() {
     const collections = get(this, 'props.data.collection.nodes')
-    console.log('HIHIHIHI', collections)
 
     return (
       <Layout>

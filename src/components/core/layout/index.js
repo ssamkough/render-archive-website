@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
     <div className={styles.layoutContainer}>
       <Head />
       <Navigation />
-      <main style={{ padding: '40px 0px' }}>{children}</main>
+      <main id="main" style={{ padding: '40px 0px' }}>
+        {children}
+      </main>
       <Footer />
     </div>
   )

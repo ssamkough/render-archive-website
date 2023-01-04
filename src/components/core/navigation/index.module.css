@@ -39,6 +39,22 @@
   gap: var(--space-md);
 }
 
+.skipLink {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  color: red;
+  opacity: 0;
+  font-weight: 600;
+}
+
+.skipLink:focus,
+.skipLink:active {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   .logoLink > span:last-child {
     border: 0;

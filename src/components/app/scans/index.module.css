@@ -1,0 +1,38 @@
+.scanContainer h1 {
+  margin-top: 20px;
+}
+
+.scanContainer img {
+  margin-top: 20px;
+  width: 300px;
+}
+
+.scanContainer hr {
+  background-color: black;
+}
+
+.mainScanContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.scanContainer h3 {
+  margin-top: 20px;
+}
+
+.alternativeScansContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.alternativeScansContainer img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  object-fit: contain;
+}
