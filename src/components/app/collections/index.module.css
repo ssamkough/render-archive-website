@@ -118,12 +118,13 @@
 
 .tabContainer button {
   font-size: 1.2em;
+  color: black;
   border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.activeTabButton {
+.tabContainer button.activeTabButton {
   color: white;
   background-color: black;
   border-color: white;

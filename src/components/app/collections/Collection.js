@@ -18,13 +18,13 @@ const Collection = ({
           onClick={() => setCurrentTab('scans')}
           className={currentTab === 'scans' && styles.activeTabButton}
         >
-          Scans
+          Promotional
         </button>
         <button
           onClick={() => setCurrentTab('renders')}
           className={currentTab === 'renders' && styles.activeTabButton}
         >
-          Renders
+          In-game
         </button>
       </div>
       <div className={styles.collectionScansContainer}>
